@@ -85,7 +85,8 @@ public class WebController {
 		qty--;
 		g.setQuantity(qty);
 		repo.save(g);
-		return viewAllGames(model);
+//		return viewAllGames(model);
+		return checkedOutGame(model,true);
 	}
 	
 	@GetMapping("/return/{id}")

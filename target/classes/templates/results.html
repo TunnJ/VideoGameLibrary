@@ -15,15 +15,15 @@
   <!--Navbar Links-->
 	<nav id="nav">
 		<ul>
-			<li class="shape-circle circle-one"><a th:href="@{checkedOutView}">Checked Out
+			<li class="shape-circle circle-one"><a href="/checkedOutView">Checked Out
 					Games</a></li>
-			<li class="shape-circle circle-two"><a th:href="@{inputGame}">Add
+			<li class="shape-circle circle-two"><a href="/inputGame">Add
 					New Game</a></li>
-			<li class="shape-circle circle-three"><a th:href="@{customerView}">Customer
+			<li class="shape-circle circle-three"><a href="/customerView">Customer
 					View</a></li>
-			<li class="shape-circle circle-four"><a th:href="@{rent}">Rent a
+			<li class="shape-circle circle-four"><a href="/rent">Rent a
 					Game</a></li>
-			<li class="shape-circle circle-five"><a th:href="index.html">Home</a>
+			<li class="shape-circle circle-five"><a href="/index.html">Home</a>
 			</li>
 		</ul>
 	</nav>
@@ -44,6 +44,10 @@
 						<th>Platform</th>
 						<th>Quantity</th>
 						<th>Checked Out</th>
+						<th></th>
+						<th></th>
+						<th></th>
+						<th></th>
 					</tr>
 					<tr th:each="currentGame : ${games}">
 						<td th:text="${currentGame.title}" />

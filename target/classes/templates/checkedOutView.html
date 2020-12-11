@@ -16,13 +16,13 @@
 	<!--Navbar Links-->
 	<nav id="nav">
 		<ul>
-			<li class="shape-circle circle-one"><a th:href="@{viewAll}">View
+			<li class="shape-circle circle-one"><a href="/viewAll">View
 					All</a></li>
-			<li class="shape-circle circle-two"><a th:href="@{inputGame}">Add
+			<li class="shape-circle circle-two"><a href="/inputGame">Add
 					New Game</a></li>
-			<li class="shape-circle circle-three"><a th:href="@{customerView}">Customer
+			<li class="shape-circle circle-three"><a href="/customerView">Customer
 					View</a></li>
-			<li class="shape-circle circle-four"><a th:href="index.html">Home</a>
+			<li class="shape-circle circle-four"><a href="/index.html">Home</a>
 			</li>
 		</ul>
 	</nav>
@@ -50,7 +50,6 @@
 					<td th:text="${currentGame.quantity}" />
 					<td th:text="${currentGame.checkedOut}" />
 					<td th:text="${currentGame.checkOutDate}"/td>
-					<td></td>
 				</tr>
 			</table>
 		</form>
